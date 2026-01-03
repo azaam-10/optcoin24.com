@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "start": "serve .",
-    "build": "echo 'No build step required for static ESM deployment'"
+    "build": "mkdir -p public && cp index.html index.tsx App.tsx constants.tsx types.ts metadata.json public/ && cp -r * public/ 2>/dev/null || true"
   },
   "keywords": [],
   "author": "",
