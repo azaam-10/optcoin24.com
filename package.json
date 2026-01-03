@@ -1,17 +1,23 @@
 
 {
   "name": "crypto-wallet-clone",
-  "version": "1.0.0",
-  "description": "Crypto Wallet UI Clone for Vercel Deployment",
   "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "serve .",
-    "build": "mkdir -p public && cp index.html index.tsx App.tsx constants.tsx types.ts metadata.json public/"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "devDependencies": {
-    "serve": "^14.2.0"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
   }
 }
