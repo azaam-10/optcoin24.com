@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { Language } from './types';
-import { TRANSLATIONS, Icons } from './constants';
+import { Language } from './types.ts';
+import { TRANSLATIONS, Icons } from './constants.tsx';
 
 const App: React.FC = () => {
   const [lang, setLang] = useState<Language>('ar');

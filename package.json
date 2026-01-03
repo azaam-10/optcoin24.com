@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "start": "serve .",
-    "build": "mkdir -p public && cp index.html index.tsx App.tsx constants.tsx types.ts metadata.json public/ && cp -r * public/ 2>/dev/null || true"
+    "build": "mkdir -p public && cp index.html index.tsx App.tsx constants.tsx types.ts metadata.json public/"
   },
   "keywords": [],
   "author": "",

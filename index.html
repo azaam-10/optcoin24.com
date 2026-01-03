@@ -28,6 +28,7 @@
         display: none;
       }
     </style>
+    <!-- استيراد React من خلال ESM -->
     <script type="importmap">
 {
   "imports": {
@@ -39,10 +40,12 @@
   }
 }
 </script>
-    <!-- تحميل ملف التشغيل الرئيسي -->
-    <script type="module" src="./index.tsx"></script>
+    <!-- إضافة Babel لتحويل كود TSX/JSX في المتصفح -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
     <div id="root"></div>
+    <!-- تحميل ملف التشغيل الرئيسي كنوع text/babel لكي يعالجه Babel -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
