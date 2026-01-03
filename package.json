@@ -1,0 +1,17 @@
+
+{
+  "name": "crypto-wallet-clone",
+  "version": "1.0.0",
+  "description": "Crypto Wallet UI Clone for Vercel Deployment",
+  "private": true,
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build step required for static ESM deployment'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
